@@ -2,7 +2,7 @@ const familyMembers = [
     { name: "Marsha Thompson", role: "Mother", image: "images/mom.jpg", bio: "The heart of our family. Happy Mother's Day!" },
     { name: "Winston Edwards", role: "Father", image: "images/dad.jpg", bio: "The strongest man we know." },
     { name: "Jezoar Reece", role: "Eldest Brother", image: "images/jezour.jpg", bio: "Leading the way." },
-    { name: "Zahyr Reece", role: "Second Oldest", image: "images/zahyr.jpg", bio: "Always there for us." },
+    { name: "Zahyr Reece", role: "Second Oldest", image: "images/zahyr.JPG", bio: "Always there for us." },
     { name: "Theodore Edwards", role: "Third Oldest", image: "images/theo.jpg", bio: "The creative spirit." },
     { name: "Jamall Edwards", role: "Youngest Brother", image: "images/jamall.jpg", bio: "The one who keeps us laughing." },
     { name: "Miah Edwards", role: "Youngest Child", image: "images/miah.jpg", bio: "The light of the house." }
