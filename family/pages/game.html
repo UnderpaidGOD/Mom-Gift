@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-select=none">
+    <title>Family Blast!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+        if (localStorage.getItem('theme') === 'dark') document.documentElement.classList.add('dark');
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="bg-slate-100 dark:bg-slate-950 overflow-hidden touch-none">
+
+    <div class="flex flex-col items-center justify-center min-h-screen p-4">
+        <div class="w-full max-w-md flex justify-between items-center mb-4 bg-white dark:bg-slate-900 p-4 rounded-2xl shadow-lg">
+            <div class="text-center">
+                <p class="text-xs font-bold text-slate-400 uppercase">Score</p>
+                <p id="score" class="text-2xl font-black text-amber-500">0</p>
+            </div>
+            <div class="text-center">
+                <p class="text-xs font-bold text-slate-400 uppercase">Moves</p>
+                <p id="moves" class="text-2xl font-black text-rose-500">20</p>
+            </div>
+            <button onclick="location.href='../family.html'" class="bg-slate-200 dark:bg-slate-800 p-2 rounded-xl">
+                🏠
+            </button>
+        </div>
+
+        <div class="relative bg-white dark:bg-slate-900 p-2 rounded-[2rem] shadow-2xl border-4 border-amber-400">
+            <canvas id="gameCanvas" width="350" height="350" class="rounded-2xl cursor-pointer"></canvas>
+        </div>
+
+        <p class="mt-4 text-slate-500 font-medium">Tap groups of 2 or more!</p>
+    </div>
+
+    <script src="../js/game.js"></script>
+</body>
+</html>
